@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Compare cursos online e ferramentas de Inteligência Artificial. Reviews detalhados, rankings atualizados e as melhores ofertas antes de comprar." />
+  <title>Comparador IA | Melhores Cursos e Ferramentas de Inteligência Artificial</title>
+
+  <!-- SEO básico -->
+  <meta name="robots" content="index, follow" />
+
+  <style>
+    /* ================= RESET ================= */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', Arial, sans-serif; background: #f5f7fa; color: #222; line-height: 1.6; }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
+
+    /* ================= HEADER ================= */
+    header {
+      position: fixed;
+      top: 0; left: 0; width: 100%;
+      background: #0f172a;
+      color: #fff;
+      z-index: 1000;
+    }
+    .nav {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+    }
+    .logo { font-size: 1.3rem; font-weight: bold; }
+    .menu { display: flex; gap: 20px; }
+    .menu a { font-size: 0.95rem; opacity: 0.9; }
+    .cta-btn {
+      background: #22c55e;
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-weight: bold;
+      color: #0f172a;
+    }
+    .menu-toggle { display: none; font-size: 1.5rem; cursor: pointer; }
+
+    /* ================= HERO ================= */
+    .hero {
+      padding: 140px 20px 80px;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: #fff;
+      text-align: center;
+    }
+    .hero h1 { font-size: 2.4rem; margin-bottom: 15px; }
+    .hero p { max-width: 700px; margin: auto; opacity: 0.9; }
+    .hero .cta-btn { margin-top: 25px; display: inline-block; }
+
+    /* ================= SECTIONS ================= */
+    section { padding: 70px 20px; }
+    .container { max-width: 1200px; margin: auto; }
+    .section-title { text-align: center; margin-bottom: 40px; }
+
+    /* ================= CARDS ================= */
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 25px; }
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+      transition: transform .3s;
+    }
+    .card:hover { transform: translateY(-5px); }
+    .stars { color: #facc15; margin: 8px 0; }
+    .pros { color: #16a34a; font-size: 0.85rem; }
+    .cons { color: #dc2626; font-size: 0.85rem; }
+
+    /* ================= COMPARADOR ================= */
+    table {
+      width: 100%; border-collapse: collapse; margin-top: 20px;
+    }
+    th, td {
+      padding: 12px; border: 1px solid #ddd; text-align: center;
+    }
+    th { background: #0f172a; color: #fff; }
+
+    /* ================= ADS ================= */
+    .ads {
+      background: #e5e7eb;
+      text-align: center;
+      padding: 30px;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    /* ================= FOOTER ================= */
+    footer {
+      background: #020617;
+      color: #cbd5f5;
+      padding: 40px 20px;
+    }
+    footer .grid { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+    footer h4 { margin-bottom: 10px; color: #fff; }
+
+    /* ================= MODAL ================= */
+    .modal {
+      position: fixed; inset: 0; background: rgba(0,0,0,.6);
+      display: none; align-items: center; justify-content: center;
+    }
+    .modal-content {
+      background: #fff; padding: 30px; border-radius: 10px; max-width: 400px;
+    }
+
+    /* ================= RESPONSIVO ================= */
+    @media (max-width: 768px) {
+      .menu { display: none; flex-direction: column; background: #0f172a; position: absolute; top: 60px; right: 20px; padding: 20px; }
+      .menu.active { display: flex; }
+      .menu-toggle { display: block; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo">ComparadorIA</div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav class="menu" id="menu">
+      <a href="#">Início</a>
+      <a href="#produtos">Comparações</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#blog">Blog</a>
+      <a href="#">Sobre</a>
+      <a href="#">Contato</a>
+    </nav>
+    <a href="https://click.linksynergy.com/fs-bin/click?id=XXXXXX" class="cta-btn">Ver Melhores Ofertas</a>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>Compare Cursos e Ferramentas de IA Antes de Comprar</h1>
+  <p>Escolha os melhores cursos online e ferramentas de Inteligência Artificial com base em reviews, notas reais e custo-benefício.</p>
+  <a href="https://go.hotmart.com/XXXXXX" class="cta-btn">Começar Agora</a>
+</section>
+
+<section id="produtos">
+  <div class="container">
+    <h2 class="section-title">Cursos e Ferramentas de IA em Destaque</h2>
+    <div class="grid">
+      <div class="card">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1581091870620-2f62b3cfe92d?auto=format&fit=crop&w=400&q=80"/>
+        <h3>Curso IA do Zero</h3>
+        <div class="stars">★★★★★</div>
+        <p class="pros">✔ Rápido ✔ Barato</p>
+        <p class="cons">✖ Suporte limitado</p>
+        <a href="#" class="cta-btn">Ver Oferta</a>
+      </div>
+      <div class="card">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1591696205602-4302b2f7e9fa?auto=format&fit=crop&w=400&q=80" />
+        <h3>Ferramenta IA Pro</h3>
+        <div class="stars">★★★★☆</div>
+        <p class="pros">✔ Premium ✔ Seguro</p>
+        <p class="cons">✖ Preço elevado</p>
+        <a href="#" class="cta-btn">Ver Oferta</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 class="section-title">Comparador Interativo</h2>
+    <table>
+      <tr><th>Produto</th><th>Preço</th><th>Nota</th></tr>
+      <tr><td>A</td><td>$19</td><td>5</td></tr>
+      <tr><td>B</td><td>$29</td><td>4</td></tr>
+    </table>
+  </div>
+</section>
+
+<section class="ads">Espaço reservado para Google AdSense</section>
+
+<section id="blog">
+  <div class="container">
+    <h2 class="section-title">Blog SEO – Guias Definitivos de IA</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>Melhor Curso de Inteligência Artificial em 2025</h3>
+        <p>Comparação completa dos cursos mais populares, preços, vantagens e para quem cada um é indicado.</p>
+        <a href="#" class="cta-btn">Ler Guia Completo</a>
+      </article>
+      <article class="card">
+        <h3>Top 7 Ferramentas de IA para Ganhar Dinheiro</h3>
+        <p>Análise prática das ferramentas de IA mais usadas por freelancers, empresas e criadores.</p>
+        <a href="#" class="cta-btn">Ver Ranking</a>
+      </article>
+      <article class="card">
+        <h3>Curso de IA Vale a Pena? Análise Honesta</h3>
+        <p>Quando investir, quando não investir e como evitar golpes no mercado de cursos online.</p>
+        <a href="#" class="cta-btn">Ler Review</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container grid">
+    <div>
+      <h4>Sobre</h4>
+      <p>Plataforma independente de comparação e reviews.</p>
+    </div>
+    <div>
+      <h4>Legal</h4>
+      <p>Política de Privacidade<br>Termos de Uso</p>
+    </div>
+    <div>
+      <h4>Contato</h4>
+      <p>Email: contato@site.com</p>
+    </div>
+  </div>
+</footer>
+
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <h3>Receba ofertas exclusivas</h3>
+    <input type="email" placeholder="Seu email" style="width:100%;padding:10px;margin:10px 0" />
+    <button class="cta-btn" onclick="closeModal()">Cadastrar</button>
+  </div>
+</div>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('menu').classList.toggle('active');
+  }
+
+  setTimeout(() => {
+    document.getElementById('modal').style.display = 'flex';
+  }, 5000);
+
+  function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+  }
+</script>
+
+</body>
+</html>
